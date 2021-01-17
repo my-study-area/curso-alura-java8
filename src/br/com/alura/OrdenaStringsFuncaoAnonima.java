@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class OrdenaStrings {
+public class OrdenaStringsFuncaoAnonima {
 
 	public static void main(String[] args) {
 		List<String> palavras = new ArrayList<>();
