@@ -16,3 +16,7 @@ Curso de Java moderno: Tire proveito dos novos recursos do Java 8
   - Métodos de instância de objetos específicos
   - Métodos de instância de um objeto arbitrário de um tipo específico
   - Construtor
+
+***Módulo: Streams: trabalhando melhor com coleções***
+  - modificações em um stream não modificam a coleção/objeto que o gerou
+  - utilizamos o `mapToInt` ao trabalhar com o tipo primitivo int para evitar o autoboxing. Também existem map para float e double.
