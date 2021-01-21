@@ -15,6 +15,7 @@ public class StreamComCollectors {
 		cursos.add(new Curso("C", 55));
 		
 		Optional<Curso> optional = cursos.stream()
+				.parallel()
 			   .filter(c -> c.getAlunos() > 100)
 			   .findAny();
 		
@@ -34,5 +35,10 @@ public class StreamComCollectors {
 		System.out.println("");
 		System.out.println(mapa);
 
+		//Exercćicio 06 Calculando média de quantidade de alunos -  Minha primeira solução
+		System.out.println(cursos.stream().collect(Collectors.averagingInt(Curso::getAlunos)).toString());
+		
+		//Exercćicio 06 Calculando média de quantidade de alunos - Opinião do instrutor
+		cursos.stream().mapToInt(Curso::getAlunos).average().ifPresent(System.out::println);
 	}
 }
