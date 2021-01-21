@@ -20,3 +20,8 @@ Curso de Java moderno: Tire proveito dos novos recursos do Java 8
 ***Módulo: Streams: trabalhando melhor com coleções***
   - modificações em um stream não modificam a coleção/objeto que o gerou
   - utilizamos o `mapToInt` ao trabalhar com o tipo primitivo int para evitar o autoboxing. Também existem map para float e double.
+
+***Módulo: Mais Streams, Collectors e APIs***
+- o método `findAny` em Stream retorna um `Optional`
+- `Optional` é uma classe do java para trabalhar com possíveis valores `null`.
+- o método `collect` em Stream pode ser utilizado para gerar uma `List` através do uso da interface Collectors. Ex: `cursos.stream().filter(c -> c.getAlunos() > 100).collect(Collectors.toList());`
