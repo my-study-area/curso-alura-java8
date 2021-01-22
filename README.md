@@ -25,3 +25,11 @@ Curso de Java moderno: Tire proveito dos novos recursos do Java 8
 - o método `findAny` em Stream retorna um `Optional`
 - `Optional` é uma classe do java para trabalhar com possíveis valores `null`.
 - o método `collect` em Stream pode ser utilizado para gerar uma `List` através do uso da interface Collectors. Ex: `cursos.stream().filter(c -> c.getAlunos() > 100).collect(Collectors.toList());`
+
+***Módulo: A nova API de datas***
+- toda a API de datas é imutável
+- usamos o `DateTimeFormatter` para formatar datas
+```java
+LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+```
+- usamos `LocalDate` para trabalhar com datas e `LocalDateTime` para trabalhar com data e tempo.
