@@ -43,3 +43,5 @@ Curso de Java moderno: Tire proveito dos novos recursos do Java 8
 LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 ```
 - usamos `LocalDate` para trabalhar com datas e `LocalDateTime` para trabalhar com data e tempo.
+- a classe `Duration` trabalha com intervalo de horas
+- `ZonedDateTime` é a classe que melhor representa uma data e hora com time-zone
